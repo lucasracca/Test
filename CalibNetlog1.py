@@ -75,7 +75,7 @@ class ControlMainWindows(QtWidgets.QMainWindow):
                        else:
                            self.ui.medidoPhysic.setText(altura[2][:-5])
                            parametros = self.comm.getParametersDrw()
-                          # print(parametros)
+
                            if str(parametros) != "Error":
                                 #print ("getParametersDrw return: %s" % parametros)
                                 self.ui.medidoStatusRig.setText("Encoder " + parametros[5])
@@ -152,7 +152,7 @@ class ControlMainWindows(QtWidgets.QMainWindow):
          tiempo= tiempo[11:]
          self.x.append(tiempo)
 
-         # self.y= altura[2]  #y.append(np.random.randn(1))  # añadimos un valor aleatorio a la lista 'y'
+                          #y.append(np.random.randn(1))  # añadimos un valor aleatorio a la lista 'y'
                                        # Estas condiciones las he incluido solo para dibujar los últimos
                                         # 10 datos de la lista 'y' ya que quiero que en el gráfico se
                                          # vea la evolución de los últimos datos
